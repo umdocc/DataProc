@@ -46,7 +46,7 @@ shinyServer(
     
     # draw the histogram with the specified number of bins
     par(bg="grey") 
-    plot(xdata,ydata,type="b", lwd=2,col="red", xlab="Year",ylab="Point",main=paste("Technical points for", input$var, "over the last 20 years"),sub=paste("Total points =",totalsum))
+    plot(xdata,ydata,type="b", lwd=2,col="red", xlab="Year",ylab="Point",main=paste("Technical points for", input$var, "over the last 20 years"),sub=paste("Total points =",total_sum))
   })
 output$text1 <- renderText({ 
   paste("You have selected car maker", input$var, ".The regression model used is",input$mode)
